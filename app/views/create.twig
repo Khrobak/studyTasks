@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+{% block content %}
+    <h2>Регистрация</h2>
+    <form id="registration" action="/" method="post">
+        <p><label>Имя</label><br/> <input type='text' name="name" placeholder="Введите имя" required
+                                          value=""/></p>
+        <p><label>Почта</label><br/> <input type='email' name="email" placeholder="Введите почту" required
+                                            value=""/></p>
+        <p><label>Пароль</label> <br/><input type='password' name="password" placeholder="Введите пароль" required
+                                             value=""/></p>
+        <p><label>Подтверждение пароля</label><br/> <input type='password' name="password_confirmed" required
+                                                           placeholder="Подтвердите пароль"
+                                                           value=""/></p>
+        <p><input name="reg" type="submit" value="Зарегистрироваться"/></p>
+    </form>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="../../js/my.js"></script>
+{% endblock %}

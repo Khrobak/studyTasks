@@ -1,0 +1,9 @@
+{% extends "layout.twig" %}
+{% block content %}
+    <p>Это главная страница </p>
+
+    {% if session.name is not empty %}
+        <p> Добро пожаловать, {{ session.name }} ! </p>
+    {% endif %}
+
+{% endblock %}

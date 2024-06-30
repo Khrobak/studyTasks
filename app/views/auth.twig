@@ -1,0 +1,16 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <form id="authorization" method="post" action="/auth">
+        <h2>Авторизация</h2>
+        <p><label>Почта</label><br/> <input type='email' name="email" placeholder="Введите почту" required
+                                            value=""/></p>
+        <p><label>Пароль</label> <br/><input type='password' name="password" placeholder="Введите пароль" required
+                                             value=""/></p>
+        <p><input name="auth" type="submit" value="Авторизоваться"/></p>
+    </form>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="../../js/my.js"></script>
+{% endblock %}
