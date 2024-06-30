@@ -22,6 +22,7 @@ class View
             'auto_reload' => true,
         ));
         $this->twig->addGlobal('session', $_SESSION);
+        $this->twig->addGlobal('size', sizeof(file('session.txt')));
     }
 
     public static function getView()

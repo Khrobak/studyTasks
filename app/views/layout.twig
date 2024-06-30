@@ -11,6 +11,7 @@
 <body>
 <div class="nav">
     <a href="/">Главная</a>
+    <a href="/"> Сейчас на сайте {{ size }}</a>
     {% if session.name is empty %}
         <a href="create">Регистрация</a>
         <a href="auth">Авторизация</a>
